@@ -9,9 +9,8 @@ But just to be sure, I'll be playing the **critically acclaimed** game Yu-Gi-Oh 
 
 The way I think I should tackle this, is by:
 ### Cards
-* Monster Cards
+* Monster Cards (normal monsters)
   * Effect Monsters
-  * Normal Monsters
 * Spell Cards 
 * Trap Cards
 
@@ -32,9 +31,11 @@ The way I think I should tackle this, is by:
   * Determines normal summon or sacrifice
 
 Effect Monsters Possess: 
-* Effects
-  * Flip Effects
-  * Summon Effects
+* Effect Type
+  * Flip Effects, if monster flipped, then =>
+    * Action that happens when effect activated
+  * Summon Effects, if monster is summoned, then =>
+    * Action that happens when effect is activated
   * ...
 
 ### Player and CPU
