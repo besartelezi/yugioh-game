@@ -73,4 +73,10 @@ Order of creation will be:
 Things I'd like to add in the future of this project:
 * Fusion Summons
 * Legendary Cards
+* Exodia
+  * This is a monster, that's made out of 5 cards 'the 5 pieces of exodia'.
+  * If the player has all 5 cards in their hand, they automatically win
+* Spell cards that control enemy cards
+* Monster reborn
+  * Returns monster from the graveyard to your field
 * ...
