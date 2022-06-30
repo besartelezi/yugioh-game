@@ -15,12 +15,9 @@ The way I think I should tackle this, is by:
 * Trap Cards
 
 **Cards** Possess:
-* Backside
-  * Standard Back of YUGIOH card
-* Frontside
-  * Name
-  * Image
-  * Description / Effect Description
+* Name 
+* Image
+* Description / Effect Description
 
 **Monster Cards** Possess:
 * Attack
@@ -56,9 +53,6 @@ Player and CPU possess:
   * Spell/Trap Field
     * 5 Slots
   * Health
-  * End Turn Buttons
-  * Cards
-  * Deck
   * Graveyard
 
 ## Every Phase/Turn a Class
