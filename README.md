@@ -27,6 +27,13 @@ The way I think I should tackle this, is by:
 * Stars
   * Determines normal summon or sacrifice
 
+**Monster Cards** Functions:
+* From hand or deck
+  * Summon
+  * Special Summon (later)
+* From field
+  * Attack
+
 Effect Monsters Possess: 
 * Effect Type
   * Flip Effects, if monster flipped, then =>
@@ -58,7 +65,14 @@ Player and CPU possess:
 ## Every Phase/Turn a Class
 I think that, theoretically, it should be possible to add the game rules like this
 
-Order of creation will be:
+Create a class called 'Turns', every function in this class = a turn
+Set all turns to negative, when gameStarts() -> set the turn that comes after it to true, and if that turn is set to true, that function will be called.
+-> Is this possible?
+(Probably need to add variables that are all set to false, and if those variables are set to true = start the corresponding turn)
+
+First turn => skips attack turn
+
+## I will be following this order
 1. Cards
    1. Monster Cards
       1. Normal Monsters
