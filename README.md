@@ -85,6 +85,17 @@ First turn => skips attack turn
 
 ## Future Features Ft. Future
 Things I'd like to add in the future of this project:
+* Different Decks
+  * At the start of the game, let the player choose what kind of deck they want to use.
+    * Machine Deck
+    * Spellcaster Deck
+    * The BeCode Deck (my personal favourite)
+      * Ask the fellow learners at BeCode to design their own cards, and create a deck out of these cards
+      * Some examples at the top of my head are:
+      * Spellcard - VDAB = "Sacrifice 1 'Learner' or 'Coach' card on your side of the field, to inflict 1000 healthpoints of damage directly to your opponent"
+      * Trapcard - PHP: The Hill = "When an enemy summons a monster card on the field, destroy the summoned monster card"
+      * Effect Monster Card - Besart, The Creator: "When this monster has been summoned on your side of the field, destroy all the face-down monster cards on your opponents side of the field"
+      * ...
 * Fusion Summons
 * Legendary Cards
 * Exodia
