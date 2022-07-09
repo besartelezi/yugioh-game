@@ -1,13 +1,29 @@
 export class Card {
-    cardName: string;
-    cardImage: string;
-    cardDescription: string;
-    isShown: boolean;
+    private cardName: string;
+    private cardImage: string;
+    private cardDescription: string;
+    private isFaceUp: boolean;
 
-    constructor(cardName: string, cardImage: string, cardDescription: string, isShown:boolean = false) {
+    constructor(cardName: string, cardImage: string, cardDescription: string, isFaceUp:boolean = false) {
         this.cardName = cardName;
         this.cardImage = cardImage;
         this.cardDescription = cardDescription;
-        this.isShown = isShown;
+        this.isFaceUp = isFaceUp;
+    }
+
+    public get _cardName () {
+        return this.cardName
+    }
+
+    public get _cardImage () {
+        return this.cardImage
+    }
+
+    public get _CardDescription () {
+        return this.cardDescription
+    }
+
+    public get _IsFaceUp () {
+        return this.isFaceUp
     }
 }

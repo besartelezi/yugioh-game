@@ -532,113 +532,101 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"adjPd":[function(require,module,exports) {
-var _card = require("./scripts/Card");
-var _monsterCard = require("./scripts/MonsterCard");
-var _effectMonster = require("./scripts/EffectMonster");
-var _player = require("./scripts/Player");
-var _playingField = require("./scripts/PlayingField");
+var _card = require("./typescripts/Card");
+var _monsterCard = require("./typescripts/MonsterCard");
 const BesartTheCreator = new (0, _monsterCard.MonsterCard)("Besart The Creator", "/images/shrek.png", "The Creator of this cruel, cruel game.", false, 6900, 4200, false, false, 4);
 console.log(BesartTheCreator);
 
-},{"./scripts/Card":"462fp","./scripts/MonsterCard":"eNa33","./scripts/EffectMonster":"dvk8k","./scripts/Player":"2GlZ4","./scripts/PlayingField":"8MzEy"}],"462fp":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Card", ()=>Card);
-class Card {
-    constructor(cardName, cardImage, cardDescription, isShown = false){
+},{"./typescripts/Card":"2wsN7","./typescripts/MonsterCard":"cG5Nc"}],"2wsN7":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Card = void 0;
+var Card = /** @class */ function() {
+    function Card1(cardName, cardImage, cardDescription, isFaceUp) {
+        if (isFaceUp === void 0) isFaceUp = false;
         this.cardName = cardName;
         this.cardImage = cardImage;
         this.cardDescription = cardDescription;
-        this.isShown = isShown;
+        this.isFaceUp = isFaceUp;
     }
-}
+    Object.defineProperty(Card1.prototype, "_cardName", {
+        get: function() {
+            return this.cardName;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Card1.prototype, "_cardImage", {
+        get: function() {
+            return this.cardImage;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Card1.prototype, "_CardDescription", {
+        get: function() {
+            return this.cardDescription;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Card1.prototype, "_IsFaceUp", {
+        get: function() {
+            return this.isFaceUp;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Card1;
+}();
+exports.Card = Card;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
+},{}],"cG5Nc":[function(require,module,exports) {
+"use strict";
+var __extends = this && this.__extends || function() {
+    var extendStatics = function(d1, b1) {
+        extendStatics = Object.setPrototypeOf || ({
+            __proto__: []
+        }) instanceof Array && function(d, b) {
+            d.__proto__ = b;
+        } || function(d, b) {
+            for(var p in b)if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+        };
+        return extendStatics(d1, b1);
     };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"eNa33":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "MonsterCard", ()=>MonsterCard);
-var _card = require("./Card");
-class MonsterCard extends (0, _card.Card) {
-    constructor(cardName, cardImage, cardDescription, isShown, attack, defense, attackMode, defenseMode, stars){
-        super(cardName, cardImage, cardDescription, isShown);
-        this.attack = attack;
-        this.defense = defense;
-        this.atackMode = attackMode;
-        this.defenseMode = defenseMode;
-        this.stars = stars;
+    return function(d, b) {
+        if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() {
+            this.constructor = d;
+        }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+}();
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.MonsterCard = void 0;
+var Card_1 = require("./Card");
+var MonsterCard = /** @class */ function(_super) {
+    __extends(MonsterCard1, _super);
+    function MonsterCard1(cardName, cardImage, cardDescription, isFaceUp, attack, defense, attackMode, defenseMode, stars) {
+        if (attackMode === void 0) attackMode = false;
+        if (defenseMode === void 0) defenseMode = false;
+        var _this = _super.call(this, cardName, cardImage, cardDescription, isFaceUp) || this;
+        _this.attack = attack;
+        _this.defense = defense;
+        _this.attackMode = attackMode;
+        _this.defenseMode = defenseMode;
+        _this.stars = stars;
+        return _this;
     }
-    getMonsterCard() {
-        return this.cardName, this.cardImage, this.cardDescription, this.isShown, this.attack, this.defense, this.atackMode, this.defenseMode, this.stars;
-    }
-}
+    return MonsterCard1;
+}(Card_1.Card);
+exports.MonsterCard = MonsterCard;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./Card":"462fp"}],"dvk8k":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "EffectMonster", ()=>EffectMonster);
-var _monsterCard = require("./MonsterCard");
-class EffectMonster extends (0, _monsterCard.MonsterCard) {
-    constructor(cardName, cardImage, cardDescription, isShown, attack, defense, attackMode, defenseMode, stars, effectType, effectAction){
-        super(cardName, cardImage, cardDescription, isShown, attack, defense, attackMode, defenseMode, stars);
-        this.effectType = effectType;
-        this.effectAction = effectAction;
-    }
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./MonsterCard":"eNa33"}],"2GlZ4":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Player", ()=>Player);
-class Player {
-    constructor(health = 4000, deck = [], hand){
-        this.health = health;
-        this.deck = deck;
-        this.hand = hand;
-    }
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8MzEy":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "PlayingField", ()=>PlayingField);
-class PlayingField {
-    constructor(monsterField, magicField, graveyard){
-        this.monsterField = monsterField;
-        this.magicField = magicField;
-        this.graveyard = graveyard;
-    }
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["1JEHZ","adjPd"], "adjPd", "parcelRequirefb77")
+},{"./Card":"2wsN7"}]},["1JEHZ","adjPd"], "adjPd", "parcelRequirefb77")
 
 //# sourceMappingURL=index.63aff760.js.map
