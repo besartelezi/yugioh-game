@@ -1,0 +1,24 @@
+{
+  "name": "yugioh-game",
+  "version": "1.0.0",
+  "description": "This will be a rather challenging personal task.\r I want to try and make a Yu-Gi-Oh game, made on Javascript using OOP.\r ###### If I'm able to pull this off, I might remake the fighting system of the game Megaman Battle Network.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besartelezi/yugioh-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/besartelezi/yugioh-game/issues"
+  },
+  "homepage": "https://github.com/besartelezi/yugioh-game#readme",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
