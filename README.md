@@ -81,16 +81,18 @@ Set all turns to negative, when gameStarts() -> set the turn that comes after it
 First turn => skips attack turn
 
 ## I will be following this order
-1. Cards
-   1. Monster Cards
-      1. Normal Monsters
-      2. Effect Monsters
-2. Field
-3. Player/CPU
-4. Magic Cards
-   1. Spell Cards
-   2. Trap Cards
-5. ...
+- [x] Cards 
+  - [x] Monster Cards/Normal Monsters
+- [ ] Deck
+  - [ ] Made out of Cards (monster cards)
+- [ ] Field
+- [ ] Player/CPU
+- [ ] Turns
+- [ ] Effect Monsters
+- [ ] Magic Cards
+  -[ ]  Spell Cards
+  -[ ] Trap Cards
+- [ ] ...
 
 ---
 
