@@ -9,4 +9,8 @@ export class MonsterCard extends Card{
         this.defenseMode = defenseMode;
         this.stars = stars;
     }
+    getMonsterCard () {
+        return (this.cardName, this.cardImage, this.cardDescription, this.isShown, this.attack, this.defense, this.atackMode, this.defenseMode, this.stars);
+    }
+
 }
