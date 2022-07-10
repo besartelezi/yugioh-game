@@ -1,10 +1,24 @@
 # Yu-Gi-Oh-OOP!
 This will be a rather challenging personal task.
 I want to try and make a Yu-Gi-Oh game, made on Javascript using OOP.
-###### If I'm able to pull this off, I might remake the fighting system of the game Megaman Battle Network.
+Once the game is up and ready, you'll be able to [play it here!](https://besartelezi.github.io/yugioh-game/)
+
+The main reason why I'm working on this project is to help me understand OOP better.
+One day, I was talking to a fellow learner of mine about the advantages of OOP, when all of a sudden, I was thinking to myself.
+'Could I make an entire Yu-Gi-Oh game with Javascript and OOP?'
+Just the thought itself actually helped me understand OOP much better.
+
+I've learned that learning things just goes a lot faster/better, when you're having fun with it.
+It also helps a lot if you recreate something that you have a lot of knowledge of.
+Growing up I played a lot of Yu-Gi-Oh, both with my little brother and my friends, but also just on the Playstation and Gameboy (yes I had a Yu-Gi-Oh game on both devices please don't be too jealous).
+
+As much as I'd like to show off a completed Yu-Gi-Oh game, the real purpose of this project is to help me get a more in depth understanding of OOP.
+But that doesn't mean I'm not gonna work off my :bee: -hind so I can play some darn' tootin' Yu-Gi-Oh with some of my very own cool custom made cards!
+
+###### If I'm able to pull this off, I might remake the fighting system of the game Megaman Battle Network (but that's a vvery, VERY big IF).
 
 ---
-## I Summon 'Elemental Hero: Programmer' in Attack Mode!
+##  I Summon 'Elemental Hero: Programmer' in Attack Mode!
 I'd like to imagine that I know enough about Yu-Gi-Oh since I grew up playing/watching it.
 But just to be sure, I'll be playing the **critically acclaimed** game Yu-Gi-Oh GX: Duel Academy on my good ol' Gameboy Micro.
 I just want to clarify that the following things that I wrote down are meant to help me visualize better how to tackle this ginormous project.
@@ -119,6 +133,42 @@ So here's a quick shout-out to Uriahs Victor on Youtube, you saved my life buddy
 
 With that headache and a half out of the way, I can finally focus on making the same card appear on the site again.
 But this time in Typescript.
+
+## The Deck of Cards
+I now know that my Card and MonsterCard classes are working, the next step is to create a deck.
+I know how to create it in simple JS, but I'm a little stuck in figuring out how to create it while respecting the rules of OOP.
+What I want to do for now is set the code below in a class:
+````
+let playerDeck = [];
+
+function createCards () {
+    for (let i = 0; i<40; i++) {
+    //BesartTheCreator is the name of the new Card object I created.
+        playerDeck.push(BesartTheCreator);
+    }
+}
+createCards()
+````
+Once I've figured out how to construct a deck of cards with this loop, I'll try to add a .text file where I'll write down all the different cards.
+For now it'll be purely normal monster cards.
+After the deck has been made out of different cards, I will also create a 'Hand' Class.
+Then it'll be time to create the following functions:
+* Draw a card
+* Shuffle deck
+* ...
+
+I have also decided on the very first **major goal/milestone** of this project.
+I'm currently aiming to have a completely functioning Yu-Gi-Oh game, but just with normal monster cards.
+So no spell/trap/effect monsters/fusion summons/ritual summons,...
+So basically, create Yu-Gi-Oh with the game rules of the very first episode.
+
+The biggest challenges of this goal will be:
+* Creating the CPU
+* The Turns System (and different Phases within those turns)
+* Doing everything in OOP
+
+
+
 
 ## Future Features Ft. Future
 Things I'd like to add in the future of this project:
