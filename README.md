@@ -84,6 +84,30 @@ Player and CPU possess:
   * Health
   * Graveyard
 
+---
+
+## To-Do List
+- [x] Write out the (almost) entire darn thing
+- [x] Create a Card class
+- [x] Create a MonsterCard class
+- [x] Use parcel to make the project work
+- [x] Console.log new MonsterCard to check if everything is in order
+- [x] Add a Deck class
+- [x] Create a loop of MonsterCards that get pushed in a property of Deck class
+- [x] Console.log new Deck to check if it works properly
+- [ ] Create **monster** cards in json file
+  - [ ] Research proper way that array of objects can be passed through the MonsterCard class
+  - [ ] Newly constructed cards need to be pushed in array playerDeck
+- [ ] Console.log playerDeck to see if it works
+- [ ] Edit json file to see it newly added cards don't break the code
+- [ ] Add a shuffle method
+  - [ ] Might add an interface for this, depending on how shuffle will be used
+- [ ] Add Hand class
+  - Basically the cards the user has in their hand
+- [ ] Create a draw method, lets user draw a card from the deck
+
+---
+
 ## Every Phase/Turn a Class
 I think that, theoretically, it should be possible to add the game rules like this
 
@@ -94,7 +118,7 @@ Set all turns to negative, when gameStarts() -> set the turn that comes after it
 
 First turn => skips attack turn
 
-## I will be following this order
+## I will be following this order of adding features to the game
 - [x] Cards 
   - [x] Monster Cards/Normal Monsters
 - [ ] Deck
@@ -109,6 +133,7 @@ First turn => skips attack turn
 - [ ] ...
 
 ---
+
 ## Besart V.S. Uncaught ReferenceError: require is not defined, Battle Between Titans
 If there is one error I've gotten **very** sick of seeing, it's this one: Uncaught ReferenceError: require is not defined.
 I wanted to use multiple JS files on a single index.html, but it just wouldn't work.
@@ -117,6 +142,7 @@ After some googling and with some of a little (Translater's note: "a little" in 
 Apparently you can't just add a ton of JS files and pray to your computer that it'll work.
 You need a bundler to configure all your JS files into a single JS file.
 I will explain this a bit more in the section below, in the meantime, please do enjoy this meme!
+
 ![alt-text](images/yugioh-meme.png)
 
 ## Bundlers, it can be your angle, or yuor devil...
