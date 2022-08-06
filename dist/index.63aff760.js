@@ -532,58 +532,21 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"adjPd":[function(require,module,exports) {
-var _card = require("./typescripts/Card");
-var _monsterCard = require("./typescripts/MonsterCard");
-const BesartTheCreator = new (0, _monsterCard.MonsterCard)("Besart The Creator", "/images/shrek.png", "The Creator of this cruel, cruel game.", false, 6900, 4200, false, false, 4);
-console.log(BesartTheCreator);
-
-},{"./typescripts/Card":"2wsN7","./typescripts/MonsterCard":"cG5Nc"}],"2wsN7":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.Card = void 0;
-var Card = /** @class */ function() {
-    function Card1(cardName, cardImage, cardDescription, isFaceUp) {
-        if (isFaceUp === void 0) isFaceUp = false;
-        this.cardName = cardName;
-        this.cardImage = cardImage;
-        this.cardDescription = cardDescription;
-        this.isFaceUp = isFaceUp;
-    }
-    Object.defineProperty(Card1.prototype, "_cardName", {
-        get: function() {
-            return this.cardName;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Card1.prototype, "_cardImage", {
-        get: function() {
-            return this.cardImage;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Card1.prototype, "_CardDescription", {
-        get: function() {
-            return this.cardDescription;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Object.defineProperty(Card1.prototype, "_IsFaceUp", {
-        get: function() {
-            return this.isFaceUp;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return Card1;
-}();
-exports.Card = Card;
+var MonsterCard_1 = require("./typescripts/MonsterCard");
+var Deck_1 = require("./typescripts/Deck");
+var besartTheCreator = new MonsterCard_1.MonsterCard("Besart The Creator", "/images/shrek.png", "The Creator of this cruel, cruel game.", false, 6900, 4200, false, false, 4);
+console.log(besartTheCreator);
+var becodeDeck = new Deck_1.Deck();
+becodeDeck.getDeck();
+console.log(becodeDeck); //For now, the main.js will be used for testing
+ //Eventually, create a class function that will be used to start the game, and end the game.
+ //to run the localhost, do npm run dev
 
-},{}],"cG5Nc":[function(require,module,exports) {
+},{"./typescripts/MonsterCard":"cG5Nc","./typescripts/Deck":"ePbQC"}],"cG5Nc":[function(require,module,exports) {
 "use strict";
 var __extends = this && this.__extends || function() {
     var extendStatics = function(d1, b1) {
@@ -627,6 +590,80 @@ var MonsterCard = /** @class */ function(_super) {
 }(Card_1.Card);
 exports.MonsterCard = MonsterCard;
 
-},{"./Card":"2wsN7"}]},["1JEHZ","adjPd"], "adjPd", "parcelRequirefb77")
+},{"./Card":"2wsN7"}],"2wsN7":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Card = void 0;
+var Card = /** @class */ function() {
+    function Card1(cardName, cardImage, cardDescription, isFaceUp) {
+        if (isFaceUp === void 0) isFaceUp = false;
+        this.cardName = cardName;
+        this.cardImage = cardImage;
+        this.cardDescription = cardDescription;
+        this.isFaceUp = isFaceUp;
+    }
+    Object.defineProperty(Card1.prototype, "_cardName", {
+        get: function() {
+            return this.cardName;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Card1.prototype, "_cardImage", {
+        get: function() {
+            return this.cardImage;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Card1.prototype, "_CardDescription", {
+        get: function() {
+            return this.cardDescription;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Card1.prototype, "_IsFaceUp", {
+        get: function() {
+            return this.isFaceUp;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Card1;
+}();
+exports.Card = Card; //Because of some reason, when compiling ts files that possess private properties, use the following: tsc -t es5 script.ts
+
+},{}],"ePbQC":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.Deck = void 0;
+var MonsterCard_1 = require("./MonsterCard");
+var Deck = /** @class */ function() {
+    function Deck1(playerDeck) {
+        if (playerDeck === void 0) playerDeck = [];
+        this.playerDeck = playerDeck;
+    }
+    Deck1.prototype.getDeck = function() {
+        for(var i = 0; i < 5; i++)this.playerDeck.push(new MonsterCard_1.MonsterCard("Besart The Creator", "/images/shrek.png", "The Creator of this cruel, cruel game.", false, 6900, 4200, false, false, 4));
+        return this.playerDeck;
+    };
+    Deck1.prototype.shuffleDeck = function() {};
+    Object.defineProperty(Deck1.prototype, "_playerDeck", {
+        get: function() {
+            return this.playerDeck;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return Deck1;
+}();
+exports.Deck = Deck;
+
+},{"./MonsterCard":"cG5Nc"}]},["1JEHZ","adjPd"], "adjPd", "parcelRequirefb77")
 
 //# sourceMappingURL=index.63aff760.js.map
