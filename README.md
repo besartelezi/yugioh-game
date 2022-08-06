@@ -15,7 +15,7 @@ Growing up I played a lot of Yu-Gi-Oh, both with my little brother and my friend
 As much as I'd like to show off a completed Yu-Gi-Oh game, the real purpose of this project is to help me get a more in depth understanding of OOP.
 But that doesn't mean I'm not gonna work off my :bee: -hind so I can play some darn' tootin' Yu-Gi-Oh with some of my very own cool custom made cards!
 
-###### If I'm able to pull this off, I might remake the fighting system of the game Megaman Battle Network (but that's a vvery, VERY big IF).
+###### If I'm able to pull this off, I might remake the fighting system of the game Megaman Battle Network (but that's a very, VERY big IF).
 
 ---
 ##  I Summon 'Elemental Hero: Programmer' in Attack Mode!
@@ -104,11 +104,20 @@ First turn => skips attack turn
 - [ ] Turns
 - [ ] Effect Monsters
 - [ ] Magic Cards
-  -[ ]  Spell Cards
-  -[ ] Trap Cards
+  - [ ] Spell Cards
+  - [ ] Trap Cards
 - [ ] ...
 
 ---
+## Besart V.S. Uncaught ReferenceError: require is not defined, Battle Between Titans
+If there is one error I've gotten **very** sick of seeing, it's this one: Uncaught ReferenceError: require is not defined.
+I wanted to use multiple JS files on a single index.html, but it just wouldn't work.
+After some googling and with some of a little (Translater's note: "a little" in this case means A LOT) of help of the coaches at BeCode, I came to the conclusion that I needed a bundler.
+
+Apparently you can't just add a ton of JS files and pray to your computer that it'll work.
+You need a bundler to configure all your JS files into a single JS file.
+I will explain this a bit more in the section below, in the meantime, please do enjoy this meme!
+![alt-text](images/yugioh-meme.png)
 
 ## Bundlers, it can be your angle, or yuor devil...
 I received some feedback from one of the coaches, who told me two things.
@@ -167,7 +176,11 @@ The biggest challenges of this goal will be:
 * The Turns System (and different Phases within those turns)
 * Doing everything in OOP
 
-
+## I figured it out fellas
+### My main JS file was a Javascript file and not a Typescript file that gets compiled to a JS file
+#### That caused all the weird bugs
+##### I had much more trouble figuring this out than I'd like to admit
+###### But hey it got fixed :point_right: :sunglasses: :point_right:
 
 
 ## Future Features Ft. Future
