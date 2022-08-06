@@ -1,0 +1,55 @@
+"{'Besart The Creator'",
+'/images/shrek.png',
+'The Creator of this cruel, cruel game.',
+false,
+6900, 4200,
+false, false,
+4}",
+
+'{"Dark Magician",
+"/images/shrek.png",
+"A magician that is dark",
+false,
+2500, 1200,
+false, false,
+4}'
+
+'{"Baby Dragon",
+"/images/shrek.png",
+"Lil' dragon baby boy bambino",
+false,
+1200, 800,
+false, false,
+4}'
+
+'{"Celtic Gaurdian",
+"/images/shrek.png",
+"Guardian of Wales probably",
+false,
+1400, 1400,
+false, false,
+4}'
+
+'{"Vampire Dio",
+"/images/shrek.png",
+"A vampire named Dio",
+false,
+1900, 1200,
+false, false,
+4}'
+
+
+
+
+"Cards": {
+"Top Insurance Companies": [
+{
+"No": "1",
+"Name": "Berkshire Hathaway",
+"Market Capitalization": "$308 B"
+}
+],
+"source": "investopedia.com",
+"Time": "Feb 2019"
+}
+}
