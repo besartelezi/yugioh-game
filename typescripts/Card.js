@@ -40,3 +40,4 @@ var Card = /** @class */ (function () {
     return Card;
 }());
 exports.Card = Card;
+//Because of some reason, when compiling ts files that possess private properties, use the following: tsc -t es5 script.ts

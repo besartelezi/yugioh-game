@@ -11,7 +11,7 @@ export class Card {
         this.isFaceUp = isFaceUp;
     }
 
-    public get _cardName () {
+     get _cardName () {
         return this.cardName
     }
 
@@ -27,3 +27,4 @@ export class Card {
         return this.isFaceUp
     }
 }
+//Because of some reason, when compiling ts files that possess private properties, use the following: tsc -t es5 script.ts
